@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ProfileFragment"
+    android:orientation="vertical"
+    android:paddingHorizontal="40dp"
+    android:background="@color/white"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Profile"
+        android:textSize="34dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <Space
+        android:layout_width="15dp"
+        android:layout_height="15dp" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        app:lottie_rawRes="@raw/laravel"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:layout_gravity="center"/>
+    <Space
+        android:layout_width="15dp"
+        android:layout_height="15dp" />
+    <TextView
+        android:id="@+id/tvname_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NAME"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:gravity="center"/>
+    <Space
+        android:layout_width="15dp"
+        android:layout_height="15dp" />
+    <TextView
+        android:id="@+id/tvemail_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="EMAIL"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:gravity="center"/>
+    <Space
+        android:layout_width="15dp"
+        android:layout_height="15dp" />
+    <TextView
+        android:id="@+id/tvcreated_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CREATED AT"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:gravity="center"/>
+    <Space
+        android:layout_width="15dp"
+        android:layout_height="15dp" />
+    <Button
+        android:id="@+id/btnLogoutP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:textSize="28dp"
+        android:backgroundTint="#ff291a"
+        android:elevation="5dp"/>
+
+</LinearLayout>
